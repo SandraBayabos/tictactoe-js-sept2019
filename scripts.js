@@ -23,9 +23,11 @@ function nextMove(square) {
     turn++;
     changeMessage();
     if (turn % 2 == 0) {
+      currentPlayer = "O";
       square.innerHTML = "O";
     } else {
       square.innerHTML = "X";
+      currentPlayer = "X";
     }
     checkWin();
   } else {
@@ -50,7 +52,7 @@ function checkWin() {
       .join("");
     if (winningState === "XXX" || winningState === "OOO") {
       won = true;
-      alert("Congrats. You won");
+      alert(`Congrats. Player ${currentPlayer} won!`);
     }
   }
   return won;
@@ -66,3 +68,5 @@ function changeMessage() {
   let turnMessage = document.getElementById("player");
   turn % 2 == 0 ? (turnMessage.innerText = "X") : (turnMessage.innerText = "O");
 }
+
+function resetGame() {}

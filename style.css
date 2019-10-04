@@ -1,6 +1,8 @@
 body {
   width: 550px;
   margin: 0 auto;
+  background: #ffbbcc;
+  font-family: "Nunito", sans-serif;
 }
 
 h1 {
