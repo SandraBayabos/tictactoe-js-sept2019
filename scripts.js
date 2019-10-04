@@ -58,16 +58,9 @@ function checkWin() {
   return won;
 }
 
-// function startGame() {}
-
 // DISPLAY TURN
 
 function changeMessage() {
   let turnMessage = document.getElementById("player");
   turn % 2 == 0 ? (turnMessage.innerText = "X") : (turnMessage.innerText = "O");
 }
-
-// function resetGame() {
-//   board = document.getElementsByClassName("board");
-//   board.innerText = "";
-// }
