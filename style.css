@@ -58,6 +58,10 @@ h1 {
     width: 90%;
   }
 
+  img {
+    width: 12%;
+  }
+
   #message {
     text-align: center;
     font-size: 1.5rem;
@@ -77,6 +81,9 @@ h1 {
 @media (min-width: 834px) {
   h1 {
     font-size: 5rem;
+  }
+  img {
+    width: 8%;
   }
   .grid-container {
     display: grid;
