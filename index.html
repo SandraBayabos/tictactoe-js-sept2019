@@ -11,22 +11,16 @@
   <body>
     <h1>Tic Tac Toe</h1>
     <div id="message">It's Player <span id="player">X</span>'s turn!</div>
-    <table border="1">
-      <tr>
-        <td id="squares" class="squares" onclick="nextMove(this)"></td>
-        <td id="squares" class="squares" onclick="nextMove(this)"></td>
-        <td id="squares" class="squares" onclick="nextMove(this)"></td>
-      </tr>
-      <tr>
-        <td id="squares" class="squares" onclick="nextMove(this)"></td>
-        <td id="squares" class="squares" onclick="nextMove(this)"></td>
-        <td id="squares" class="squares" onclick="nextMove(this)"></td>
-      </tr>
-      <tr>
-        <td id="squares" class="squares" onclick="nextMove(this)"></td>
-        <td id="squares" class="squares" onclick="nextMove(this)"></td>
-        <td id="squares" class="squares" onclick="nextMove(this)"></td>
-      </tr>
-    </table>
+    <div id="board" class="grid-container">
+      <div onclick="nextMove(this)" class="grid-item"></div>
+      <div onclick="nextMove(this)" class="grid-item"></div>
+      <div onclick="nextMove(this)" class="grid-item"></div>
+      <div onclick="nextMove(this)" class="grid-item"></div>
+      <div onclick="nextMove(this)" class="grid-item"></div>
+      <div onclick="nextMove(this)" class="grid-item"></div>
+      <div onclick="nextMove(this)" class="grid-item"></div>
+      <div onclick="nextMove(this)" class="grid-item"></div>
+      <div onclick="nextMove(this)" class="grid-item"></div>
+    </div>
   </body>
 </html>
