@@ -1,0 +1,15 @@
+body {
+  width: 550px;
+  margin: 0 auto;
+}
+
+h1 {
+  border-bottom: 1px solid black;
+}
+
+.squares {
+  height: 80px;
+  width: 80px;
+  font-size: 45pt;
+  text-align: center;
+}
