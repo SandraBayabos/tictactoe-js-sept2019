@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   background: linear-gradient(180deg, #e1eec3, #f05053);
@@ -9,6 +13,7 @@ body {
   flex-direction: column;
   align-content: center;
   height: 100vh;
+  margin: 0;
 }
 
 h1 {
@@ -23,10 +28,12 @@ h1 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
   padding: 10px;
-  margin: auto;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vw;
 }
 .grid-item {
   box-sizing: border-box;
@@ -79,7 +86,7 @@ h1 {
   }
 }
 
-@media (min-width: 834px) {
+/* @media (min-width: 834px) {
   h1 {
     font-size: 5rem;
   }
@@ -98,4 +105,4 @@ h1 {
   #message {
     font-size: 4rem;
   }
-}
+} */
