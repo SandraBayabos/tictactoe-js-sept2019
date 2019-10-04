@@ -23,7 +23,7 @@ function nextMove(square) {
     turn++;
     changeMessage();
     if (turn % 2 == 0) {
-      currentPlayer = "O";
+      currentPlayer = currentPlayer;
       square.innerHTML = "O";
     } else {
       square.innerHTML = "X";
@@ -58,8 +58,6 @@ function checkWin() {
   return won;
 }
 
-// // START GAME
-
 // function startGame() {}
 
 // DISPLAY TURN
@@ -69,4 +67,7 @@ function changeMessage() {
   turn % 2 == 0 ? (turnMessage.innerText = "X") : (turnMessage.innerText = "O");
 }
 
-function resetGame() {}
+// function resetGame() {
+//   board = document.getElementsByClassName("board");
+//   board.innerText = "";
+// }
